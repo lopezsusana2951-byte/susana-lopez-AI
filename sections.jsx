@@ -10,13 +10,13 @@ const FORMAT_IMGS = [
   "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85",
 ];
 
-/* ── video paths — hosted on Google Drive (CDN, no file size limit) ──────── */
+/* ── video paths — served directly from Netlify ──────────────────────────── */
 const FORMAT_VIDEOS = [
-  "https://drive.usercontent.google.com/download?id=1G9oWnnQCUwFyuN1Eg7Nq7EuJcRr_Q7RC&export=download&authuser=0&confirm=t", // LifeStyle Agent
-  "https://drive.usercontent.google.com/download?id=1nED5Yf9xEGLmuvQ5zz7vs7s9g0tmaih0&export=download&authuser=0&confirm=t", // Interior 3D Tour
-  "https://drive.usercontent.google.com/download?id=1O4sPYK6yEUZzM6mM5ljBUXAD-zVWObSU&export=download&authuser=0&confirm=t", // Space Remodel
-  "https://drive.usercontent.google.com/download?id=1rSIcmlTarqYbSNiNgY6sjJNod2BC4cve&export=download&authuser=0&confirm=t", // Land Vision
-  "https://drive.usercontent.google.com/download?id=1UWuCwbOAtP2Nbm1x9Hrq3zwmQwgtOx6P&export=download&authuser=0&confirm=t", // Full Vision Composite
+  "videos/lifestyle-agent.mp4",   // LifeStyle Agent
+  "videos/interior-3d.mp4",       // Interior 3D Tour
+  "videos/space-remodel.mp4",     // Space Remodel
+  "videos/land-vision.mp4",       // Land Vision
+  "videos/full-vision.mp4",       // Full Vision Composite
 ];
 
 /* ── Social media photos — auto-mapped from filenames ────────────────────────
@@ -33,13 +33,13 @@ function detectPhotoType(filename) {
 
 const RAW_SOCIAL_FILES = [
   /* carousels (1792×2400 · 3:4) */
-  'social_Media_photos/Instagram_Carrusel_Page_1.jpeg',
-  'social_Media_photos/Instagram_Carrusel_Page_2.jpeg',
-  'social_Media_photos/Instagram_Carrusel_Page_3.jpeg',
+  'Social_Media_Photos/Instagram_Carrusel_Page_1.jpeg',
+  'Social_Media_Photos/Instagram_Carrusel_Page_2.jpeg',
+  'Social_Media_Photos/Instagram_Carrusel_Page_3.jpeg',
   /* stories (1536×2752 · 9:16) */
-  'social_Media_photos/Instagram_Story_1.jpeg',
-  'social_Media_photos/Instagram_Story_2.jpeg',
-  'social_Media_photos/Instagram_Story_3.jpeg',
+  'Social_Media_Photos/Instagram_Story_1.jpeg',
+  'Social_Media_Photos/Instagram_Story_2.jpeg',
+  'Social_Media_Photos/Instagram_Story_3.jpeg',
 ];
 
 /* Auto-build the photo data array from filenames */

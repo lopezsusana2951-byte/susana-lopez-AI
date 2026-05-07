@@ -1,13 +1,12 @@
 # macOS
 .DS_Store
 
-# Videos (hosted on Google Drive, not needed in repo)
+# Raw source video folders (processed versions are in videos/)
 Video_Formats/
 Video_Page 2/
 
 # Other project folders not part of the site
 OpenMontage/
-Social_Media_Photos/
 catsus-lab-video/
 koda-stack/
 real_estate_pipeline/

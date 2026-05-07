@@ -21,7 +21,7 @@ const IMG = {
 };
 
 /* ── Video assets — filenames preserved, spaces encoded ──────────────────── */
-const MANIFESTO_VIDEO = "https://drive.usercontent.google.com/download?id=1N6EBS0Wl5ie-O79u5tb283_R38rprAOI&export=download&authuser=0&confirm=t";
+const MANIFESTO_VIDEO = "videos/manifesto.mp4";
 
 /* ── Price data — not translated (same in all languages) ─────────────────── */
 const PACKAGE_PRICES = [
