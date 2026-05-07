@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Videos (hosted on Google Drive, not needed in repo)
+Video_Formats/
+Video_Page 2/
+
+# Other project folders not part of the site
+OpenMontage/
+Social_Media_Photos/
+catsus-lab-video/
+koda-stack/
+real_estate_pipeline/
+higgsfield-content/
+BIBLE_AGENT_FINAL.js
+
+# Zip
+Tobon_Group_Proposal.zip
+
+# Claude internal
+.claude/
+.playwright-mcp/
+CLAUDE.md
