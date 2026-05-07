@@ -126,6 +126,7 @@ function VideoPhone({ src, formatIndex, isActive, badge, deliverable, formatNum 
             preload={isActive ? "auto" : "metadata"}
             className="vphone__vid"
             onCanPlay={() => setLoaded(true)}
+            webkit-playsinline="true"
           />
 
           {/* Top overlay: format badge */}
@@ -254,11 +255,13 @@ function MobileFormatCard({ fmt, videoSrc, index }) {
             <video
               ref={videoRef}
               src={videoSrc}
+              autoPlay
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="auto"
               className="vphone__vid"
+              webkit-playsinline="true"
             />
             <div className="vphone__top-bar">
               <span className="vphone__badge">{fmt.badge}</span>

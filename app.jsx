@@ -288,8 +288,9 @@ function NewStandard({ onPlayVideo }) {
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
             poster={IMG.interior}
+            webkit-playsinline="true"
           />
 
           {/* Hover overlay text */}
