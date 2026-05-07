@@ -288,7 +288,7 @@ function NewStandard({ onPlayVideo }) {
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
             poster={IMG.interior}
           />
 
