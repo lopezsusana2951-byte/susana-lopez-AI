@@ -541,10 +541,20 @@ function Final() {
       setMsg(tr('contact.msgError'));
       return;
     }
-    setMsg(tr('contact.msgSuccess'));
-    setSent(true);
-    f.reset();
-    setTimeout(() => setMsg(""), 6000);
+    // Submit to Netlify Forms via fetch
+    const data = new FormData(f);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString(),
+    })
+      .then(() => {
+        setMsg(tr('contact.msgSuccess'));
+        setSent(true);
+        f.reset();
+        setTimeout(() => { setMsg(""); setSent(false); }, 6000);
+      })
+      .catch(() => setMsg(tr('contact.msgError')));
   }
 
   return (
@@ -565,7 +575,9 @@ function Final() {
             <span>{tr('contact.location')}</span>
             <span>{tr('contact.availability')}</span>
           </div>
-          <form className="contact-form" onSubmit={submit}>
+          <form className="contact-form" onSubmit={submit} name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
             <div className="row">
               <input name="name"  placeholder={tr('contact.formName')} />
               <input name="email" type="email" placeholder={tr('contact.formEmail')} />
