@@ -541,18 +541,20 @@ function Final() {
       setMsg(tr('contact.msgError'));
       return;
     }
-    // Submit to Netlify Forms via fetch
-    const data = new FormData(f);
-    fetch('/', {
+    fetch('https://formspree.io/f/xdabwejz', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(data).toString(),
+      body: new FormData(f),
+      headers: { 'Accept': 'application/json' },
     })
-      .then(() => {
-        setMsg(tr('contact.msgSuccess'));
-        setSent(true);
-        f.reset();
-        setTimeout(() => { setMsg(""); setSent(false); }, 6000);
+      .then(res => {
+        if (res.ok) {
+          setMsg(tr('contact.msgSuccess'));
+          setSent(true);
+          f.reset();
+          setTimeout(() => { setMsg(""); setSent(false); }, 6000);
+        } else {
+          setMsg(tr('contact.msgError'));
+        }
       })
       .catch(() => setMsg(tr('contact.msgError')));
   }
@@ -575,9 +577,7 @@ function Final() {
             <span>{tr('contact.location')}</span>
             <span>{tr('contact.availability')}</span>
           </div>
-          <form className="contact-form" onSubmit={submit} name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="bot-field" />
+          <form className="contact-form" onSubmit={submit}>
             <div className="row">
               <input name="name"  placeholder={tr('contact.formName')} />
               <input name="email" type="email" placeholder={tr('contact.formEmail')} />
