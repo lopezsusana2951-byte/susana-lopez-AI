@@ -197,11 +197,7 @@ function Hero({ heroSrc }) {
         <div />
         <div className="hero__brandmark">
           <div className="lbl">{brandLines[0]}<br/><b style={{color:'var(--ink)', fontWeight: 400}}>{brandLines[1]}</b></div>
-          <img
-            src="logo%20tobon%20group.png"
-            alt="Tobon Group"
-            className="tobon-logo"
-          />
+          <div className="sl-mark" style={{fontSize:'clamp(18px,3vw,28px)', fontWeight:300, letterSpacing:'0.15em', color:'var(--gold)'}}>SL</div>
         </div>
       </div>
 

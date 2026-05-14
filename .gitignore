@@ -13,8 +13,18 @@ real_estate_pipeline/
 higgsfield-content/
 BIBLE_AGENT_FINAL.js
 
-# Zip
+# Zips
 Tobon_Group_Proposal.zip
+*.zip
+
+# Misc files
+RENDER BEFORE.jpeg
+"comedor before.jpeg"
+"comerdor after.jpeg"
+logo tobon group.png
+susi_6hr_work_session.html
+clients/
+"zillow listing/"
 
 # Claude internal
 .claude/
