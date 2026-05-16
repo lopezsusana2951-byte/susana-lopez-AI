@@ -569,7 +569,7 @@ function Final() {
         <div className="final__form reveal">
           <div className="eyebrow">{tr('contact.connectEyebrow')}</div>
           <div className="contact-info" style={{marginBottom: 28}}>
-            <a href="mailto:hello@susanalopez.ai">{tr('contact.email')}</a>
+            <a href="mailto:susana@neuratekgroup.com">{tr('contact.email')}</a>
             <span>{tr('contact.location')}</span>
             <span>{tr('contact.availability')}</span>
           </div>
