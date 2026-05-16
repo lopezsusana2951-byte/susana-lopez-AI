@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://susana-lopez-ai.netlify.app/sitemap.xml

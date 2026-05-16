@@ -411,6 +411,10 @@ function SocialPhotoGrid({ photos, lang }) {
     carousel: lang === 'es' ? 'CARRUSEL' : 'CAROUSEL',
     story:    lang === 'es' ? 'HISTORIA' : 'STORY',
   };
+  const altLabel = {
+    carousel: lang === 'es' ? 'Carrusel de Instagram de contenido inmobiliario de lujo por Susana Lopez' : 'Instagram carousel of luxury real estate content by Susana Lopez',
+    story:    lang === 'es' ? 'Historia de Instagram de propiedad de lujo por Susana Lopez' : 'Instagram Story of luxury property content by Susana Lopez',
+  };
   const rowLabel = {
     carousel: lang === 'es' ? 'Carruseles · 3:4' : 'Carousels · 3:4',
     story:    lang === 'es' ? 'Historias · 9:16'  : 'Stories · 9:16',
@@ -421,7 +425,7 @@ function SocialPhotoGrid({ photos, lang }) {
       <div className={`ig-photo-cell ig-photo-cell--${photo.type}`}>
         <img
           src={photo.src}
-          alt={typeLabel[photo.type]}
+          alt={altLabel[photo.type]}
           loading="lazy"
           decoding="async"
           className="ig-photo-img"
