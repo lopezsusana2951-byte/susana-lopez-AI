@@ -13,11 +13,11 @@
 
       rail: {
         logoSub: 'AI VIDEO\nCREATOR',
-        mid: 'A CREATIVE PROPOSAL FOR YOUR BRAND IN MIAMI',
+        mid: 'A CREATIVE PROPOSAL FOR YOUR REAL ESTATE BRAND',
       },
 
       hero: {
-        brandmark: 'MIAMI, FL\nAI VIDEO CREATOR',
+        brandmark: 'REAL ESTATE\nAI VIDEO CREATOR',
         headline: 'A BUYER DECIDES IN EIGHT SECONDS.',
         headlineItalic: 'I design those eight seconds.',
         copy: 'MOST LUXURY LISTINGS LOOK THE SAME — POLISHED, FORGETTABLE, GONE BY THE NEXT SCROLL. I MAKE THE ONES PEOPLE SAVE, SHARE, AND COME BACK TO. AI-NATIVE FILMS FOR PROPERTIES THAT REFUSE TO BE BACKGROUND NOISE.',
@@ -130,7 +130,7 @@
         quote: "Over 3 years creating AI-driven content that actually sells. I don't just make things look beautiful — I make people stop, feel something, and want in. Every video I create is built to turn attention into desire.",
         sigName: 'Susana Lopez',
         title1: 'AI VIDEO CREATOR',
-        location: 'MIAMI, FL',
+        location: 'AVAILABLE WORLDWIDE',
         portraitEyebrow: 'PORTRAIT',
         portraitTitle: 'FOUNDER · DIRECTOR',
       },
@@ -189,7 +189,7 @@
           { q: 'Who owns the video and creative assets after delivery?',
             a: 'You do — fully and permanently. Every deliverable is licensed in perpetuity across MLS, social media, paid advertising, and brand channels. No recurring rights fees. No restrictions.' },
           { q: 'Do you create content in Spanish as well as English?',
-            a: "Yes. All monthly packages include bilingual content — every video, caption, and hashtag set is crafted in both English and Spanish to reach Miami's international buyer pool natively." },
+            a: "Yes. All monthly packages include bilingual content — every video, caption, and hashtag set is crafted in both English and Spanish to reach international luxury buyers natively." },
           { q: 'Can you match my existing brand identity?',
             a: 'Yes. Every project begins with a brand alignment session. Color grading, typography, motion language, and pacing are all calibrated to feel native to your existing visual universe — not like outside production.' },
           { q: 'How quickly will I receive my content?',
@@ -207,7 +207,7 @@
         h2em: "I'll send back the film.",
         connectEyebrow: "LET'S CONNECT",
         email: 'SUSANA@NEURATEKGROUP.COM',
-        location: 'MIAMI, FL',
+        location: 'AVAILABLE WORLDWIDE',
         availability: 'AVAILABLE FOR PROJECTS WORLDWIDE',
         formName: 'YOUR NAME',
         formEmail: 'EMAIL',
@@ -227,11 +227,11 @@
 
       rail: {
         logoSub: 'CREADORA\nDE VIDEO IA',
-        mid: 'UNA PROPUESTA CREATIVA PARA TU MARCA EN MIAMI',
+        mid: 'UNA PROPUESTA CREATIVA PARA TU MARCA INMOBILIARIA',
       },
 
       hero: {
-        brandmark: 'MIAMI, FL\nCREADORA DE VIDEO IA',
+        brandmark: 'REAL ESTATE\nCREADORA DE VIDEO IA',
         headline: 'UN COMPRADOR DECIDE EN OCHO SEGUNDOS.',
         headlineItalic: 'Yo diseño esos ocho segundos.',
         copy: 'LA MAYORÍA DE LAS PROPIEDADES DE LUJO SE VEN IGUAL — PULIDAS, OLVIDABLES, PERDIDAS AL SIGUIENTE SCROLL. YO CREO LAS QUE LA GENTE GUARDA, COMPARTE Y VUELVE A VER. VIDEOS CON IA PARA PROPIEDADES QUE SE NIEGAN A PASAR DESAPERCIBIDAS.',
@@ -344,7 +344,7 @@
         quote: 'Más de 3 años creando contenido con IA que realmente vende. No solo hago que las cosas se vean hermosas — logro que la gente se detenga, sienta algo y quiera entrar. Cada video que creo está hecho para convertir atención en deseo.',
         sigName: 'Susana Lopez',
         title1: 'CREADORA DE VIDEO IA',
-        location: 'MIAMI, FL',
+        location: 'AVAILABLE WORLDWIDE',
         portraitEyebrow: 'RETRATO',
         portraitTitle: 'FUNDADORA · DIRECTORA',
       },
@@ -403,7 +403,7 @@
           { q: '¿Quién es el dueño de los videos y activos creativos después de la entrega?',
             a: 'Tú — total y permanentemente. Cada entregable está licenciado a perpetuidad para MLS, redes sociales, publicidad pagada y canales de marca. Sin tarifas de derechos recurrentes. Sin restricciones.' },
           { q: '¿Crean contenido en español además de inglés?',
-            a: "Sí. Todos los paquetes mensuales incluyen contenido bilingüe — cada video, caption y conjunto de hashtags está elaborado en inglés y español para llegar de forma nativa al mercado internacional de compradores de Miami." },
+            a: "Sí. Todos los paquetes mensuales incluyen contenido bilingüe — cada video, caption y conjunto de hashtags está elaborado en inglés y español para llegar de forma nativa a compradores internacionales de lujo." },
           { q: '¿Pueden adaptarse a mi identidad de marca existente?',
             a: 'Sí. Cada proyecto comienza con una sesión de alineación de marca. La gradación de color, la tipografía, el lenguaje de movimiento y el ritmo se calibran para sentirse nativos de tu universo visual existente — no como producción externa.' },
           { q: '¿Con qué rapidez recibiré mi contenido?',
@@ -421,7 +421,7 @@
         h2em: 'Te envío el film.',
         connectEyebrow: 'CONECTEMOS',
         email: 'SUSANA@NEURATEKGROUP.COM',
-        location: 'MIAMI, FL',
+        location: 'AVAILABLE WORLDWIDE',
         availability: 'DISPONIBLE PARA PROYECTOS EN TODO EL MUNDO',
         formName: 'TU NOMBRE',
         formEmail: 'CORREO ELECTRÓNICO',
