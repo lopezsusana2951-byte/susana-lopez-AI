@@ -162,7 +162,6 @@ function SideRail() {
   return (
     <aside className="side-rail">
       <div className="rail-logo">
-        miami<br/>
         <small>{logoLines[0]}<br/>{logoLines[1]}</small>
       </div>
       <div className="rail-mid">{tr('rail.mid')}</div>
@@ -215,7 +214,6 @@ function Hero({ heroSrc }) {
       </div>
 
       <div className="hero__corner">
-        <b>MIAMI, FL</b>
         {tr('hero.corner')}
       </div>
 
