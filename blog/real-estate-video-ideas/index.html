@@ -170,7 +170,25 @@ strong { color: #f0ece4; }
 .idea-number { display: inline-block; font-family: 'Helvetica Neue', sans-serif; font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: #c9a96a; border: 1px solid rgba(201,169,106,0.3); padding: 4px 12px; margin-bottom: 12px; }
 .idea-block { border-left: 2px solid rgba(201,169,106,0.25); padding-left: 28px; margin: 40px 0; }
 .idea-block h2 { margin-top: 0; }
+.faq-section { margin: 60px 0; }
+.faq-section h2 { margin-bottom: 32px; }
+.faq-item { border-top: 1px solid rgba(201,169,106,0.15); padding: 24px 0; }
+.faq-item:last-child { border-bottom: 1px solid rgba(201,169,106,0.15); }
+.faq-question { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; color: #f0ece4; margin-bottom: 12px; font-weight: 400; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.faq-question::after { content: '+'; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; color: #c9a96a; flex-shrink: 0; transition: transform 0.25s; }
+.faq-item.open .faq-question::after { transform: rotate(45deg); }
+.faq-answer { color: rgba(240,236,228,0.75); font-size: 15px; line-height: 1.8; display: none; padding-top: 4px; }
+.faq-item.open .faq-answer { display: block; }
 </style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+      this.closest('.faq-item').classList.toggle('open');
+    });
+  });
+});
+</script>
 </head>
 <body>
 
@@ -302,6 +320,30 @@ strong { color: #f0ece4; }
   <p>In 2026, that means short-form social video on Instagram and TikTok, cinematic lifestyle content on YouTube and MLS, bilingual content for international buyers, and AI production that makes all of it accessible at price points that make sense for every listing in your portfolio — not just the trophy properties.</p>
 
   <p>The technology exists. The formats are proven. The only remaining question is which listing you're going to start with.</p>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item open">
+      <div class="faq-question">What type of real estate video converts buyers the fastest?</div>
+      <div class="faq-answer">Lifestyle agent videos consistently convert the fastest because they sell an emotional outcome — the feeling of living in a space — rather than a list of features. When buyers can visualize themselves inside a property, inquiry rates and showing requests climb dramatically. AI makes this format affordable for every listing, not just multi-million-dollar properties.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How many real estate videos should I create per listing?</div>
+      <div class="faq-answer">For an active listing, a minimum of three to five distinct video assets is ideal: a full lifestyle film, a short-form Reel cut, a 3D interior tour, a neighborhood context clip, and at least one story-format asset. Monthly content packages from an AI video creator can deliver all of this from a single production cycle.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Can I create these real estate video ideas without a film crew?</div>
+      <div class="faq-answer">Yes. AI real estate video production allows creators to generate lifestyle scenes, virtual staging, before-and-after transformations, and aerial visualizations without a full crew on location. The agent or seller provides raw footage or photos, and the AI creator produces cinematic, publication-ready content within days.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Which real estate video format works best on Instagram?</div>
+      <div class="faq-answer">Short-form vertical Reels under 60 seconds, formatted in 9:16, perform best on Instagram. The highest-performing formats include lifestyle montages with music, before-and-after remodel sequences, and neighborhood lifestyle clips. Bilingual captions (English and Spanish) expand reach to international buyers and significantly improve engagement in markets like Miami.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What is the best real estate video idea for vacant or dated properties?</div>
+      <div class="faq-answer">Before-and-after remodel visualization is the single most powerful video idea for vacant or dated listings. AI can show buyers what a dated kitchen becomes after a renovation, how an empty room looks furnished, or how a neglected backyard transforms with landscaping — eliminating the imagination gap that kills deals on imperfect properties.</div>
+    </div>
+  </section>
 
   <hr class="post-rule" />
 

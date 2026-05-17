@@ -141,6 +141,15 @@ a:hover { color: #f0ece4; }
 .blog-footer { border-top: 1px solid rgba(201,169,106,0.1); padding: 40px; text-align: center; font-family: 'Helvetica Neue', sans-serif; font-size: 11px; letter-spacing: 0.2em; color: rgba(201,169,106,0.4); text-transform: uppercase; }
 .blog-footer a { color: rgba(201,169,106,0.5); text-decoration: none; }
 .blog-footer a:hover { color: #c9a96a; }
+.faq-section { margin: 60px 0; }
+.faq-section h2 { margin-bottom: 32px; }
+.faq-item { border-top: 1px solid rgba(201,169,106,0.15); padding: 24px 0; }
+.faq-item:last-child { border-bottom: 1px solid rgba(201,169,106,0.15); }
+.faq-question { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; color: #f0ece4; margin-bottom: 12px; font-weight: 400; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.faq-question::after { content: '+'; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; color: #c9a96a; flex-shrink: 0; transition: transform 0.25s; }
+.faq-item.open .faq-question::after { transform: rotate(45deg); }
+.faq-answer { color: rgba(240,236,228,0.75); font-size: 15px; line-height: 1.8; display: none; padding-top: 4px; }
+.faq-item.open .faq-answer { display: block; }
 ul, ol { padding-left: 24px; margin-bottom: 20px; color: rgba(240,236,228,0.85); }
 li { margin-bottom: 8px; }
 strong { color: #f0ece4; }
@@ -157,6 +166,15 @@ strong { color: #f0ece4; }
 .inline-img { width: 100%; height: 300px; object-fit: cover; display: block; margin: 40px 0; filter: brightness(0.85); border: 1px solid rgba(201,169,106,0.15); }
 .img-caption { font-family: 'Helvetica Neue', sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(201,169,106,0.5); text-align: center; margin-top: -32px; margin-bottom: 40px; }
 </style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+      this.closest('.faq-item').classList.toggle('open');
+    });
+  });
+});
+</script>
 </head>
 <body>
 
@@ -361,6 +379,22 @@ strong { color: #f0ece4; }
   <p>To understand the full scope of what AI real estate video can do before you decide, read our foundational guide: <a href="/blog/what-is-ai-real-estate-video/">What Is AI Real Estate Video? The Complete 2026 Guide</a>.</p>
 
   <p>If you're evaluating multiple creators and want to know what separates the professionals from the rest, read: <a href="/blog/how-to-hire-ai-real-estate-video-creator/">How to Hire an AI Real Estate Video Creator</a>.</p>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item open">
+      <div class="faq-question">How much does real estate video cost in 2026?</div>
+      <div class="faq-answer">Traditional professional real estate video production costs $2,000–$10,000 per property, depending on market, crew size, drone work, and editing scope. AI-powered real estate video on a monthly retainer starts at $599/month, which includes multiple video assets, bilingual content, and a full social media content calendar — making it 60–80% less expensive than traditional production at significantly higher content volume.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What is included in a $599 AI real estate video package?</div>
+      <div class="faq-answer">Susana Lopez's Essential Package at $599/month includes AI videos, Instagram carousels, bilingual captions in English and Spanish, hashtag strategy, and scheduling. The package is designed for agents who want to establish a consistent, professional content presence without the overhead of a full production crew.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What is the ROI of real estate video marketing?</div>
+      <div class="faq-answer">Listings with video content receive 403% more inquiries than those without, according to industry research. Agents who maintain consistent video marketing typically see 20–40% faster time-to-offer on listed properties and measurable increases in brand-driven inbound leads over 3–6 months. On a single luxury transaction, the margin from a faster close or higher offer typically covers months of video production costs.</div>
+    </div>
+  </section>
 
   <hr class="post-rule" />
 

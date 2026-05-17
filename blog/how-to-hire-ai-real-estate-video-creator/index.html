@@ -141,6 +141,15 @@ a:hover { color: #f0ece4; }
 .blog-footer { border-top: 1px solid rgba(201,169,106,0.1); padding: 40px; text-align: center; font-family: 'Helvetica Neue', sans-serif; font-size: 11px; letter-spacing: 0.2em; color: rgba(201,169,106,0.4); text-transform: uppercase; }
 .blog-footer a { color: rgba(201,169,106,0.5); text-decoration: none; }
 .blog-footer a:hover { color: #c9a96a; }
+.faq-section { margin: 60px 0; }
+.faq-section h2 { margin-bottom: 32px; }
+.faq-item { border-top: 1px solid rgba(201,169,106,0.15); padding: 24px 0; }
+.faq-item:last-child { border-bottom: 1px solid rgba(201,169,106,0.15); }
+.faq-question { font-family: 'Playfair Display', Georgia, serif; font-size: 18px; color: #f0ece4; margin-bottom: 12px; font-weight: 400; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.faq-question::after { content: '+'; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; color: #c9a96a; flex-shrink: 0; transition: transform 0.25s; }
+.faq-item.open .faq-question::after { transform: rotate(45deg); }
+.faq-answer { color: rgba(240,236,228,0.75); font-size: 15px; line-height: 1.8; display: none; padding-top: 4px; }
+.faq-item.open .faq-answer { display: block; }
 ul, ol { padding-left: 24px; margin-bottom: 20px; color: rgba(240,236,228,0.85); }
 li { margin-bottom: 8px; }
 strong { color: #f0ece4; }
@@ -158,6 +167,15 @@ strong { color: #f0ece4; }
 .inline-img { width: 100%; height: 300px; object-fit: cover; display: block; margin: 40px 0; filter: brightness(0.85); border: 1px solid rgba(201,169,106,0.15); }
 .img-caption { font-family: 'Helvetica Neue', sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(201,169,106,0.5); text-align: center; margin-top: -32px; margin-bottom: 40px; }
 </style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+      this.closest('.faq-item').classList.toggle('open');
+    });
+  });
+});
+</script>
 </head>
 <body>
 
@@ -305,6 +323,22 @@ strong { color: #f0ece4; }
   <p>After your initial calls and portfolio review, you should have a clear feeling about which creator you trust with your brand. If you don't feel that clarity, trust your instincts — and ask for the sample video before committing. Every professional creator will offer one.</p>
 
   <p>The right AI real estate video creator will feel less like a vendor and more like a creative partner who cares about the success of your listings as much as you do. When you find that, the relationship will compound in value with every month of content produced.</p>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item open">
+      <div class="faq-question">What should I ask an AI real estate video creator before hiring them?</div>
+      <div class="faq-answer">Ask to see their portfolio of real estate-specific work — not just general AI video. Ask about their delivery timeline, whether bilingual content is included or extra, what they need from you to begin, how they handle revisions, and whether they offer a sample video before commitment. A professional creator will welcome all of these questions.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What are red flags when hiring an AI real estate video creator?</div>
+      <div class="faq-answer">Major red flags include: a portfolio with no real estate examples, inability to show bilingual content samples if you serve an international buyer market, no clear delivery timeline, vague revision policies, no discovery call before commitment, and pricing that seems unusually low without clear explanation of what is excluded. Also be cautious of creators who cannot speak intelligently about real estate marketing strategy — not just video production.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How important is bilingual content for real estate video in Miami?</div>
+      <div class="faq-answer">In the Miami luxury market, bilingual content is essential. Approximately 40–60% of luxury real estate transactions involve international buyers, primarily from Latin America. Content that speaks to these buyers in their native language — crafted natively in Spanish, not machine-translated — generates significantly higher engagement, longer watch time, and more direct inquiries than English-only listings.</div>
+    </div>
+  </section>
 
   <hr class="post-rule" />
 
