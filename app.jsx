@@ -574,6 +574,7 @@ function Final() {
           <div className="eyebrow">{tr('contact.connectEyebrow')}</div>
           <div className="contact-info" style={{marginBottom: 28}}>
             <a href="mailto:susana@neuratekgroup.com">{tr('contact.email')}</a>
+            <a href="tel:+17865856594">{tr('contact.phone')}</a>
             <span>{tr('contact.location')}</span>
             <span>{tr('contact.availability')}</span>
           </div>
