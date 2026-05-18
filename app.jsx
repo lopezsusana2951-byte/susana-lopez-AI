@@ -535,10 +535,16 @@ function Final() {
       setMsg(tr('contact.msgError'));
       return;
     }
-    fetch('https://formspree.io/f/xdabwejz', {
+    fetch('/', {
       method: 'POST',
-      body: new FormData(f),
-      headers: { 'Accept': 'application/json' },
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        'form-name': 'contact',
+        name: f.name.value,
+        email: f.email.value,
+        property: f.property ? f.property.value : '',
+        message: f.message ? f.message.value : '',
+      }).toString(),
     })
       .then(res => {
         if (res.ok) {

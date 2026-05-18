@@ -231,6 +231,14 @@
 <body>
 <div id="root"></div>
 
+<!-- Netlify Forms detection — hidden static form required for React apps -->
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="text" name="property" />
+  <textarea name="message"></textarea>
+</form>
+
 <!-- Blog link — static, visible before React hydrates -->
 <a href="/blog/" id="blog-nav-link" style="
   position: fixed;
