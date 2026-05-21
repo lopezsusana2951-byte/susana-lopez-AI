@@ -105,7 +105,25 @@ li { margin-bottom: 8px; }
 strong { color: #f0ece4; }
 .post-hero-img { width: 100%; height: 420px; object-fit: cover; display: block; margin-bottom: 48px; filter: brightness(0.85); }
 @media (max-width: 600px) { .blog-header { padding: 20px; } article { padding: 40px 20px 80px; } }
+.faq-section { margin: 60px 0; }
+.faq-section h2 { margin-bottom: 32px; }
+.faq-item { border-top: 1px solid rgba(201,169,106,0.15); padding: 24px 0; }
+.faq-item:last-child { border-bottom: 1px solid rgba(201,169,106,0.15); }
+.faq-question { font-family: Georgia, serif; font-size: 18px; color: #f0ece4; margin-bottom: 12px; font-weight: 400; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.faq-question::after { content: '+'; font-family: 'Helvetica Neue', sans-serif; font-size: 20px; color: #c9a96a; flex-shrink: 0; transition: transform 0.25s; }
+.faq-item.open .faq-question::after { transform: rotate(45deg); }
+.faq-answer { color: rgba(240,236,228,0.75); font-size: 15px; line-height: 1.8; display: none; padding-top: 4px; }
+.faq-item.open .faq-answer { display: block; }
 </style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.faq-question').forEach(function(q) {
+    q.addEventListener('click', function() {
+      this.closest('.faq-item').classList.toggle('open');
+    });
+  });
+});
+</script>
 </head>
 <body>
 <header class="blog-header">
@@ -229,6 +247,30 @@ strong { color: #f0ece4; }
 
   <p>If you're ready to see what a luxury property video looks like when it's built for your listing, your market, and your buyers — <a href="/#contact">let's talk</a>. You can also explore <a href="/#packages">current packages</a> to see what's included at each tier.</p>
 
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item open">
+      <div class="faq-question">Can AI really match the quality of a professional film crew for luxury property video?</div>
+      <div class="faq-answer">Yes — in many cases, AI-generated luxury property video surpasses traditional crew output. AI tools produce consistent cinematic lighting, smooth motion, and polished transitions without the variability that comes from crew skill levels, weather delays, or equipment limitations. For high-end listings, the result is a controlled, premium aesthetic that buyers expect.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How long does it take to produce a luxury property video using AI?</div>
+      <div class="faq-answer">A full AI-generated luxury property video typically takes 24–72 hours from brief to delivery, compared to 1–2 weeks for traditional crew production. AI removes the bottlenecks — no location scouting, no crew availability, no post-production backlog.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What information does an AI video creator need to produce a luxury property video?</div>
+      <div class="faq-answer">A skilled AI video creator needs property photos, floor plans, key selling points (views, finishes, neighborhood features), the target buyer persona, and any brand guidelines the agent uses. The more context provided, the more tailored and effective the final video will be.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">How much does AI luxury property video cost compared to a traditional crew?</div>
+      <div class="faq-answer">Traditional crew shoots for luxury properties run $5,000–$15,000 per listing. AI video production starts at $599 per month for a full content package — covering multiple listings, multiple formats, and bilingual content. The cost-per-listing drops dramatically once you're on a monthly plan.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Do I need to provide video footage, or does AI generate everything from photos?</div>
+      <div class="faq-answer">You can start with just photos. AI video production uses still images as source material to generate cinematic motion, virtual staging, lifestyle scenes, and atmospheric effects. Existing video footage can also be enhanced and composited with AI-generated elements for a richer final film.</div>
+    </div>
+  </section>
+
   <hr class="post-rule">
 
   <div class="cta-box">
@@ -241,7 +283,7 @@ strong { color: #f0ece4; }
     <h3>Related Articles</h3>
     <div class="related-links">
       <a href="/blog/what-is-ai-real-estate-video/">What Is AI Real Estate Video? The Complete 2026 Guide</a>
-      <a href="/blog/miami-real-estate-video-marketing/">Why Miami Real Estate Agents Need AI Video Marketing</a>
+      <a href="/blog/miami-real-estate-video-marketing/">Why Every Luxury Real Estate Agent Needs AI Video Marketing in 2026</a>
       <a href="/blog/real-estate-video-cost-2026/">What Does AI Real Estate Video Cost in 2026?</a>
       <a href="/blog/how-to-hire-ai-real-estate-video-creator/">How to Hire an AI Real Estate Video Creator</a>
     </div>
