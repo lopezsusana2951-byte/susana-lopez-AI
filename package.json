@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Susana Lopez AI Video — static site with build-time prerendering of the homepage for SEO.",
+  "description": "Susana Lopez AI Video — static site. Homepage is prerendered to real HTML for SEO via `npm run prerender`.",
   "scripts": {
-    "build": "node prerender.mjs"
+    "prerender": "node prerender.mjs"
   },
   "devDependencies": {
     "playwright": "^1.48.0"
