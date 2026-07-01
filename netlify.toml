@@ -1,0 +1,12 @@
+# Netlify build config
+# Builds a static `dist/` where the homepage is PRE-RENDERED to real HTML
+# (content, prices, headings visible before any JavaScript runs).
+# Blog pages are already static HTML and are copied as-is.
+
+[build]
+  # Install deps, download the Chromium used to prerender, then build.
+  command = "npm install && npx playwright install --with-deps chromium && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"

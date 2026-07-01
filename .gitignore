@@ -30,3 +30,8 @@ clients/
 .claude/
 .playwright-mcp/
 CLAUDE.md
+
+# Build artifacts
+node_modules/
+dist/
+dist-home-check.png
