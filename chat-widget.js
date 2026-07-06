@@ -135,7 +135,7 @@
     try {
       var r = await fetch(ENDPOINT, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ session_id: session(), body: text })
+        body: JSON.stringify({ widget_key: "wk-457cdd3e945010", session_id: session(), body: text })
       });
       var data = await r.json(); typing(false);
       bubble(data.reply || "Lo siento, ¿me lo repites?", 'agent');
