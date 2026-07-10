@@ -25,9 +25,9 @@ const MANIFESTO_VIDEO = "videos/manifesto.mp4";
 
 /* ── Price data — not translated (same in all languages) ─────────────────── */
 const PACKAGE_PRICES = [
-  { price: "$599",   was: "$799",   featured: false },
-  { price: "$999",   was: "$1,299", featured: true  },
-  { price: "$1,499", was: "$1,999", featured: false },
+  { price: "$899",   featured: false },
+  { price: "$1,499", featured: true  },
+  { price: "$2,499", featured: false },
 ];
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
@@ -394,11 +394,6 @@ function Pricing() {
         </p>
       </div>
 
-      <div className="pricing__banner reveal fade">
-        <span className="pricing__banner-tag">{tr('pricing.bannerTag')}</span>
-        <span className="pricing__banner-text">{tr('pricing.bannerText')}</span>
-      </div>
-
       {/* ── Mobile package cards (≤960px) ── */}
       <div className="pricing-cards reveal fade">
         {pkgs.map((p, i) => (
@@ -408,7 +403,6 @@ function Pricing() {
               <div className="pricing-card__name display">{p.name}</div>
               <div className="pricing-card__price display">
                 {PACKAGE_PRICES[i].price}
-                <span className="pkg__was">{PACKAGE_PRICES[i].was}</span>
               </div>
               <div className="pricing-card__note">{p.note}</div>
             </div>
@@ -438,7 +432,6 @@ function Pricing() {
               <div className="cmp-name display">{p.name}</div>
               <div className="cmp-price display">
                 {PACKAGE_PRICES[i].price}
-                <span className="pkg__was">{PACKAGE_PRICES[i].was}</span>
               </div>
               <div className="cmp-note">{p.note}</div>
               <button className="pkg__cta" onClick={() => document.getElementById('contact').scrollIntoView({behavior:'smooth'})}>
